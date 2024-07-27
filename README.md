@@ -1,2 +1,48 @@
-# AmigoFiel
- Nossa missão é conectar cães que precisam de um lar amoroso com pessoas que desejam oferecer um ambiente seguro e cheio de carinho. Através do nosso site, você pode visualizar perfis de cachorros disponíveis para adoção, conhecer suas histórias, e encontrar o amigo fiel que tanto procura.
+# Amigo Fiel
+
+**Amigo Fiel** é um site dedicado à adoção de cachorros, ajudando a conectar cães que precisam de um lar com pessoas dispostas a adotar.
+
+## Funcionalidades
+- Visualize perfis de cães disponíveis para adoção
+- Informações detalhadas sobre cada cão
+- Formulário de adoção online
+
+## Tecnologias Utilizadas
+
+- **Angular**: Framework front-end para desenvolvimento da aplicação.
+- **HTML5 & CSS3**: Para a estrutura e estilização das páginas.
+- **TypeScript**: Linguagem utilizada no desenvolvimento em Angular.
+- 
+
+## Contribuição
+Este projeto foi desenvolvido em conjunto por uma equipe de 5 pessoas:
+- Nome 1
+- Nome 2
+- Nome 3
+- Nome 4
+- Nome 5
+
+Contribuições adicionais são bem-vindas! Para contribuir, abra uma issue ou envie um pull request.
+
+## Como Executar o Projeto
+
+1. Clone este repositório:
+    ```bash
+    git clone https://github.com/seu-usuario/HealthSecure.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```bash
+    cd HealthSecure
+    ```
+3. Instale as dependências:
+    ```bash
+    npm install
+    ```
+4. Execute a aplicação:
+    ```bash
+    ng serve
+    ```
+5. Acesse a aplicação em seu navegador:
+    ```
+    http://localhost:4200
+    ```
