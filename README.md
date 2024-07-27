@@ -12,15 +12,15 @@
 - **Angular**: Framework front-end para desenvolvimento da aplicação.
 - **HTML5 & CSS3**: Para a estrutura e estilização das páginas.
 - **TypeScript**: Linguagem utilizada no desenvolvimento em Angular.
-- 
-
+- **Java**: Linguagem utilizada no desenvolvimento do back-end.
+  
 ## Contribuição
 Este projeto foi desenvolvido em conjunto por uma equipe de 5 pessoas:
-- Nome 1
+- Gabriel Fagundes
 - Nome 2
 - Nome 3
-- Nome 4
-- Nome 5
+- Luiz Antônio Valeriano
+- Thyale MD
 
 Contribuições adicionais são bem-vindas! Para contribuir, abra uma issue ou envie um pull request.
 
