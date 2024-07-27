@@ -13,9 +13,9 @@
     <!--Navegação para telas maiores -->
     <div class="Navegacao">
         <ul>
-            <li><a class="Home" routerLink="">HOME</a></li>
-            <li><a routerLink="adote">ADOTE</a></li>
-            <li><a routerLink="contato">CONTATO</a></li>
+            <li><a class="Home" routerLink="" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">HOME</a></li>
+            <li><a routerLink="adote" routerLinkActive="active-link">ADOTE</a></li>
+            <li><a routerLink="contato" routerLinkActive="active-link">CONTATO</a></li>
         </ul>
     </div>
 
