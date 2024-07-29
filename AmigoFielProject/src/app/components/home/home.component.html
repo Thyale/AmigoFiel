@@ -29,35 +29,35 @@
         <h2>Como Você Pode Ajudar</h2>
         <div class="DivAjudaSuperior">
           <ul>
-            <li>
+            <li (click)="showInfo('Ração e Alimentos', TextAlimento)">
               <i class="fas fa-drumstick-bite"></i> <strong>Ração</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Transporte e Logística', TextTransport)">
               <i class="fas fa-truck"></i> <strong>Transporte</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Brinquedos para Cachorros', TextJoy)">
               <i class="fas fa-futbol"></i> <strong>Brinquedos</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Doações Monetárias', TextMoney)">
               <i class="fas fa-hand-holding-usd"></i> <strong>Dinheiro</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Produtos de Higiene', TextHigiene)">
               <i class="fas fa-soap"></i> <strong>Higiene</strong>
             </li>
           </ul>
         </div>
         <div class="DivAjudaInferior">
           <ul>
-            <li>
+            <li (click)="showInfo('Vitaminas e Suplementos', TextVitaminas)">
                 <i class="fas fa-pills"></i> <strong>Vitaminas</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Medicações', TextMedication)">
                 <i class="fas fa-syringe"></i> <strong>Medicações</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Coleiras e Guias', TextColeiras)">
                 <i class="fas fa-dog"></i><strong>Coleiras</strong>
             </li>
-            <li>
+            <li (click)="showInfo('Casinhas e Abrigos', TextCasinhas)">
                 <i class="fas fa-home"></i> <strong>Casinhas</strong>
             </li>
           </ul>

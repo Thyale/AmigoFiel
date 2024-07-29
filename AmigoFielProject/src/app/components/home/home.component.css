@@ -168,6 +168,7 @@ h2{
     padding: 10px;
     align-items: center;
     color: #F5F5DC;
+    cursor: pointer;
     gap: 10px;
 }
 
