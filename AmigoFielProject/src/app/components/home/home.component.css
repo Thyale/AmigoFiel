@@ -99,6 +99,76 @@
     max-width: 300px;
 }
 
+/*Terceira section - Como pode ajudar a ong*/
+
+.ComoAjudar{
+    background-color: #E59E06;
+}
+
+.DivGeralAjuda{
+    width: 90%;
+    max-width: 1300px;
+    padding: 2em 0px;
+    margin: auto;   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h2{
+    font-size: 40px;
+    color: #F5F5DC;
+}
+
+
+.DivAjudaInferior{
+    width: 70%;
+    margin-bottom: 2em;
+}
+
+.DivAjudaSuperior{
+    width: 70%;
+    margin-top: 2em;
+}
+
+.DivAjudaSuperior ul{
+    display: flex;
+    flex-wrap: wrap;
+    flex: row;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.DivAjudaInferior ul{
+    flex-wrap: wrap;
+    display: flex;
+    flex: row;
+    gap: 10px;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.DivGeralAjuda i{
+    color: #F5F5DC;
+    font-size: 50px;
+}
+
+.DivGeralAjuda li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    color: #F5F5DC;
+    gap: 10px;
+}
+
+.DivGeralAjuda li:hover{
+    background-color: #da9603;
+    border-radius: 10px;
+}
+
 
 @media (max-width: 768px){
 
