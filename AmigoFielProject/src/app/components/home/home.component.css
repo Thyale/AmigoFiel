@@ -123,11 +123,11 @@
     align-items: center;
 }
 
-h2{
+.DivGeralAjuda h2{
     font-size: 40px;
     color: #F5F5DC;
+    text-align: center;
 }
-
 
 .DivAjudaInferior{
     width: 70%;
