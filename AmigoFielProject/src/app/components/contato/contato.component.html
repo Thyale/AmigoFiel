@@ -8,21 +8,21 @@
             <form action="" method="post">
                 <div>
                     <label for="Nome">Nome:</label>
-                    <input type="text" name="Nome" id="Nome" placeholder="Digite seu nome completo">
+                    <input [(ngModel)]="NomeInput" type="text" name="Nome" id="Nome" placeholder="Digite seu nome completo">
                 </div>
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" placeholder="Seu melhor Email">
+                    <input type="email" [(ngModel)]="EmailInput" name="email" id="email" placeholder="Seu melhor Email">
                 </div>
                 <div>
                     <label for="numero">Número:</label>
-                    <input type="number" name="numero" id="numero" placeholder="(00)0 0000-0000">
+                    <input type="number" [(ngModel)]="NumInput" name="numero" id="numero" placeholder="(00)0 0000-0000">
                 </div>
                 <div>
                     <label for="txt">Texto:</label>
-                    <textarea id="message" name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    <textarea id="message" [(ngModel)]="MsmInput" name="message" placeholder="Escreva sua mensagem aqui..."></textarea>
                 </div>
-                <input type="button" value="Enviar" class="enviarDuvida">
+                <input type="button" value="Enviar" (click)="EnviarMsm()" class="enviarDuvida">
             </form>
         </div>
     </div>
