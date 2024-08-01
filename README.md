@@ -18,7 +18,6 @@
 Este projeto foi desenvolvido em conjunto por uma equipe de 5 pessoas:
 - Douglas
 - Gabriel Fagundes
-- Nome 3
 - Thyale MD
 
 Contribuições adicionais são bem-vindas! Para contribuir, abra uma issue ou envie um pull request.
