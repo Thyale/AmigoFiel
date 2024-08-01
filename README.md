@@ -16,8 +16,8 @@
   
 ## Contribuição
 Este projeto foi desenvolvido em conjunto por uma equipe de 5 pessoas:
+- Douglas
 - Gabriel Fagundes
-- Nome 2
 - Nome 3
 - Thyale MD
 
