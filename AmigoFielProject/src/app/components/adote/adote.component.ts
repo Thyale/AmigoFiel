@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AdoteComponent {
 
+  imgPets = [
+    "CatAdult.png",
+    "CatAdult2.png",
+    "CatAdult3.png",
+    "CatBaby.png",
+    "DogAdult.png",
+    "DogBaby.png",
+    "DogBeagleAdult.png"
+  ]
+
 }
