@@ -26,11 +26,11 @@ Contribuições adicionais são bem-vindas! Para contribuir, abra uma issue ou e
 
 1. Clone este repositório:
     ```bash
-    git clone https://github.com/seu-usuario/HealthSecure.git
+    git clone https://github.com/seu-usuario/AmigoFiel.git
     ```
 2. Navegue até o diretório do projeto:
     ```bash
-    cd HealthSecure
+    cd AmigoFielProject
     ```
 3. Instale as dependências:
     ```bash
