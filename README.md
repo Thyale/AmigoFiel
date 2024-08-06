@@ -15,7 +15,7 @@
 - **Java**: Linguagem utilizada no desenvolvimento do back-end.
   
 ## Contribuição
-Este projeto foi desenvolvido em conjunto por uma equipe de 5 pessoas:
+Este projeto foi desenvolvido em conjunto por uma equipe de 3 pessoas:
 - Douglas
 - Gabriel Fagundes
 - Thyale MD
