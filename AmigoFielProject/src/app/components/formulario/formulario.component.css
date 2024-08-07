@@ -26,11 +26,17 @@ section{
     color: #f5f5dcc5;
 }
 
-.Dados{
-    padding: 20px;
+.ParteDosForms{
     width: 80%;
     max-width: 800px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Dados{
+    padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -64,28 +70,18 @@ section{
    background-color: #f5f5dc;
 }
 
-.Envio{
-    width: 90%;
-    max-width: 800px;
-    margin: auto;
-}
-
-.Envio form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 10px;
-}
-
-.Envio form button{
-    padding: 10px 20px;
+.Envio button{
+    width: 100%;
     background-color: #e59e06;
-    color: #f5f5dc;
-    cursor: pointer;
+    padding: 10px;
+    border-radius: 20px;
     border: none;
-    border-radius: 10px;
+    color: #f5f5dc;
+    font-weight: bolder;
+    cursor: pointer;
 }
 
-.Envio form button:hover{
-    background-color: #c38500;
+.Envio button:hover{
+    background-color: #c28604;
 }
+
