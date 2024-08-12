@@ -15,20 +15,40 @@
                         <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" [(ngModel)]="nome">
                     </div>
                     <div>
-                        <label for="idade">Idade:</label>
-                        <input type="number" name="idade" id="idade" placeholder="Sua idade atual" [(ngModel)]="idade">
+                        <label for="dataNascimento">Data de Nascimento:</label>
+                        <input type="date" name="dataNascimento" id="dataNascimento" [(ngModel)]="dataNascimento">
                     </div>
                     <div>
-                        <label for="endereco">Endereço:</label>
-                        <input type="text" name="endereco" id="endereco" placeholder="Rua exemplo, 05" [(ngModel)]="endereco">
+                        <label for="genero">Gênero:</label>
+                        <input type="text" name="genero" id="genero" placeholder="Informe seu gênero" [(ngModel)]="genero">
                     </div>
                     <div>
-                        <label for="telefone">Telefone:</label>
+                        <label for="residencia">Residência:</label>
+                        <input type="text" name="residencia" id="residencia" placeholder="Digite o tipo de residência" [(ngModel)]="residencia">
+                    </div>
+                    <div>
+                        <label for="telefone">Número de Telefone:</label>
                         <input type="tel" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" [(ngModel)]="telefone">
                     </div>
                     <div>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" placeholder="Seu melhor email" [(ngModel)]="email">
+                        <label for="razaoAdocao">Razão para Adoção:</label>
+                        <input type="text" name="razaoAdocao" id="razaoAdocao" placeholder="Descreva o motivo para adoção" [(ngModel)]="razaoAdocao">
+                    </div>
+                    <div>
+                        <label for="concordaVisita">Concorda com a visita da ONG?</label>
+                        <input type="text" name="concordaVisita" id="concordaVisita" placeholder="Sim/Não" [(ngModel)]="concordaVisita">
+                    </div>
+                    <div>
+                        <label for="termoResponsabilidade">Concorda com os termos de responsabilidade?</label>
+                        <input type="text" name="termoResponsabilidade" id="termoResponsabilidade" placeholder="Sim/Não" [(ngModel)]="termoResponsabilidade">
+                    </div>
+                    <div>
+                        <label for="informacoesCorretas">Declara estar passando informações corretas?</label>
+                        <input type="text" name="informacoesCorretas" id="informacoesCorretas" placeholder="Sim/Não" [(ngModel)]="informacoesCorretas">
+                    </div>
+                    <div>
+                        <label for="listaAdocoes">Lista de Adoções Envolvidas:</label>
+                        <input type="text" name="listaAdocoes" id="listaAdocoes" placeholder="Descreva as adoções" [(ngModel)]="listaAdocoes">
                     </div>
                 </form>
             </div>
@@ -37,98 +57,58 @@
                 <h1>Informações sobre a Residência</h1>
                 <form>
                     <div>
-                        <label for="tipoResidencia">Tipo de residência:</label>
+                        <label for="tipoResidencia">Tipo de Residência:</label>
                         <input type="text" name="tipoResidencia" id="tipoResidencia" placeholder="Casa, apartamento, duplex" [(ngModel)]="tipoResidencia">
                     </div>
                     <div>
-                        <label for="residenciaPropria">Residência própria ou alugada:</label>
-                        <input type="text" name="residenciaPropria" id="residenciaPropria" placeholder="Própria ou alugada" [(ngModel)]="residenciaPropria">
+                        <label for="statusPosse">Status de Posse:</label>
+                        <input type="text" name="statusPosse" id="statusPosse" placeholder="Própria ou alugada" [(ngModel)]="statusPosse">
                     </div>
                     <div>
-                        <label for="permissaoAnimais">Se alugada, possui permissão do proprietário para animais?</label>
+                        <label for="permissaoAnimais">Permissão para Animais:</label>
                         <input type="text" name="permissaoAnimais" id="permissaoAnimais" placeholder="Sim/Não" [(ngModel)]="permissaoAnimais">
                     </div>
                     <div>
-                        <label for="espacoDisponivel">Espaço disponível para o animal:</label>
+                        <label for="espacoDisponivel">Espaço Disponível:</label>
                         <input type="text" name="espacoDisponivel" id="espacoDisponivel" placeholder="Descreva o espaço disponível" [(ngModel)]="espacoDisponivel">
                     </div>
                     <div>
-                        <label for="telasProtecao">Existem telas de proteção em janelas e sacadas?</label>
-                        <input type="text" name="telasProtecao" id="telasProtecao" placeholder="Sim/Não" [(ngModel)]="telasProtecao">
+                        <label for="telasSeguranca">Telas de Segurança:</label>
+                        <input type="text" name="telasSeguranca" id="telasSeguranca" placeholder="Sim/Não" [(ngModel)]="telasSeguranca">
+                    </div>
+                    <div>
+                        <label for="outrosAnimais">Quantidade de Outros Animais:</label>
+                        <input type="number" name="outrosAnimais" id="outrosAnimais" placeholder="Número de animais" [(ngModel)]="outrosAnimais">
+                    </div>
+                    <div>
+                        <label for="numeroResidentes">Número de Residentes:</label>
+                        <input type="number" name="numeroResidentes" id="numeroResidentes" placeholder="Número de pessoas" [(ngModel)]="numeroResidentes">
                     </div>
                 </form>
             </div>
 
             <div class="Dados">
-                <h1>Informações sobre a Família</h1>
+                <h1>Informações de Endereço</h1>
                 <form>
                     <div>
-                        <label for="numeroPessoas">Número de pessoas na residência:</label>
-                        <input type="number" name="numeroPessoas" id="numeroPessoas" placeholder="Número de pessoas" [(ngModel)]="numeroPessoas">
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep" placeholder="Digite o CEP" [(ngModel)]="cep">
                     </div>
                     <div>
-                        <label for="concordancia">Todos na residência estão de acordo com a adoção?</label>
-                        <input type="text" name="concordancia" id="concordancia" placeholder="Sim/Não" [(ngModel)]="concordancia">
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua" placeholder="Digite o nome da rua" [(ngModel)]="rua">
                     </div>
                     <div>
-                        <label for="alergias">Algum membro da família possui alergia a animais?</label>
-                        <input type="text" name="alergias" id="alergias" placeholder="Sim/Não" [(ngModel)]="alergias">
-                    </div>
-                </form>
-            </div>
-
-            <div class="Dados">
-                <h1>Experiência com Animais</h1>
-                <form>
-                    <div>
-                        <label for="jaTeveAnimais">Já teve animais antes?</label>
-                        <input type="text" name="jaTeveAnimais" id="jaTeveAnimais" placeholder="Sim/Não" [(ngModel)]="jaTeveAnimais">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro" placeholder="Digite o nome do bairro" [(ngModel)]="bairro">
                     </div>
                     <div>
-                        <label for="possuiOutrosAnimais">Atualmente possui outros animais? Se sim, quais?</label>
-                        <input type="text" name="possuiOutrosAnimais" id="possuiOutrosAnimais" placeholder="Descreva os animais" [(ngModel)]="possuiOutrosAnimais">
-                    </div>
-                </form>
-            </div>
-
-            <div class="Dados">
-                <h1>Planejamento para o Novo Animal</h1>
-                <form>
-                    <div>
-                        <label for="motivoAdocao">Por que deseja adotar um animal?</label>
-                        <input type="text" name="motivoAdocao" id="motivoAdocao" placeholder="Descreva seu motivo" [(ngModel)]="motivoAdocao">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade" [(ngModel)]="cidade">
                     </div>
                     <div>
-                        <label for="tempoSozinho">Quanto tempo o animal ficará sozinho durante o dia?</label>
-                        <input type="text" name="tempoSozinho" id="tempoSozinho" placeholder="Descreva o tempo" [(ngModel)]="tempoSozinho">
-                    </div>
-                </form>
-            </div>
-
-            <div class="Dados">
-                <h1>Compromisso</h1>
-                <form>
-                    <div>
-                        <label for="visitaRepresentante">Concorda com a visita de um representante da ONG para avaliação do ambiente?</label>
-                        <input type="text" name="visitaRepresentante" id="visitaRepresentante" placeholder="Sim/Não" [(ngModel)]="visitaRepresentante">
-                    </div>
-                    <div>
-                        <label for="termoResponsabilidade">Concorda em assinar um termo de responsabilidade pela adoção?</label>
-                        <input type="text" name="termoResponsabilidade" id="termoResponsabilidade" placeholder="Sim/Não" [(ngModel)]="termoResponsabilidade">
-                    </div>
-                </form>
-            </div>
-
-            <div class="Dados">
-                <h1>Termos e Condições</h1>
-                <form>
-                    <div>
-                        <label for="declaracao">Declaração de que as informações fornecidas são verdadeiras:</label>
-                        <input type="text" name="declaracao" id="declaracao" placeholder="Sim/Não" [(ngModel)]="declaracao">
-                    </div>
-                    <div>
-                        <label for="termosConcordancia">Concordância com os termos de adoção da ONG:</label>
-                        <input type="text" name="termosConcordancia" id="termosConcordancia" placeholder="Sim/Não" [(ngModel)]="termosConcordancia">
+                        <label for="estado">Estado:</label>
+                        <input type="text" name="estado" id="estado" placeholder="Digite o nome do estado" [(ngModel)]="estado">
                     </div>
                 </form>
             </div>

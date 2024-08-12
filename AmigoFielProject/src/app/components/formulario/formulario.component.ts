@@ -4,84 +4,56 @@ import Swal from 'sweetalert2';
 @Component({
   selector: 'app-formulario',
   templateUrl: './formulario.component.html',
-  styleUrl: './formulario.component.css'
+  styleUrls: ['./formulario.component.css']
 })
 export class FormularioComponent {
   nome: string = '';
-  idade: number | null = null;
-  endereco: string = '';
+  dataNascimento: string = '';
+  genero: string = '';
+  residencia: string = '';
   telefone: string = '';
-  email: string = '';
-
+  razaoAdocao: string = '';
+  concordaVisita: string = '';
+  termoResponsabilidade: string = '';
+  informacoesCorretas: string = '';
+  listaAdocoes: string = '';
   tipoResidencia: string = '';
-  residenciaPropria: string = '';
+  statusPosse: string = '';
   permissaoAnimais: string = '';
   espacoDisponivel: string = '';
-  telasProtecao: string = '';
-
-  numeroPessoas: number | null = null;
-  concordancia: string = '';
-  alergias: string = '';
-
-  jaTeveAnimais: string = '';
-  possuiOutrosAnimais: string = '';
-
-  motivoAdocao: string = '';
-  tempoSozinho: string = '';
-
-  visitaRepresentante: string = '';
-  termoResponsabilidade: string = '';
-
-  declaracao: string = '';
-  termosConcordancia: string = '';
-
-  DadosAdote = {
-    nome: this.nome,
-    idade: this.idade,
-    endereco: this.endereco,
-    telefone: this.telefone,
-    email: this.email,
-    tipoResidencia: this.tipoResidencia,
-    residenciaPropria: this.residenciaPropria,
-    permissaoAnimais: this.permissaoAnimais,
-    espacoDisponivel: this.espacoDisponivel,
-    telasProtecao: this.telasProtecao,
-    numeroPessoas: this.numeroPessoas,
-    concordancia: this.concordancia,
-    alergias: this.alergias,
-    jaTeveAnimais: this.jaTeveAnimais,
-    possuiOutrosAnimais: this.possuiOutrosAnimais,
-    motivoAdocao: this.motivoAdocao,
-    tempoSozinho: this.tempoSozinho,
-    visitaRepresentante: this.visitaRepresentante,
-    termoResponsabilidade: this.termoResponsabilidade,
-    declaracao: this.declaracao,
-    termosConcordancia: this.termosConcordancia
-  };
+  telasSeguranca: string = '';
+  outrosAnimais: number | null = null;
+  numeroResidentes: number | null = null;
+  cep: string = '';
+  rua: string = '';
+  bairro: string = '';
+  cidade: string = '';
+  estado: string = '';
 
   EnviarForm() {
     if (
       this.nome === '' ||
-      this.idade === null ||
-      this.endereco === '' ||
+      this.dataNascimento === '' ||
+      this.genero === '' ||
+      this.residencia === '' ||
       this.telefone === '' ||
-      this.email === '' ||
+      this.razaoAdocao === '' ||
+      this.concordaVisita === '' ||
+      this.termoResponsabilidade === '' ||
+      this.informacoesCorretas === '' ||
+      this.listaAdocoes === '' ||
       this.tipoResidencia === '' ||
-      this.residenciaPropria === '' ||
+      this.statusPosse === '' ||
       this.permissaoAnimais === '' ||
       this.espacoDisponivel === '' ||
-      this.telasProtecao === '' ||
-      this.numeroPessoas === null ||
-      this.concordancia === '' ||
-      this.alergias === '' ||
-      this.jaTeveAnimais === '' ||
-      this.possuiOutrosAnimais === '' ||
-      this.motivoAdocao === '' ||
-      this.tempoSozinho === '' ||
-      this.visitaRepresentante === '' ||
-      this.termoResponsabilidade === '' ||
-      this.declaracao === '' ||
-      this.termosConcordancia === ''
+      this.telasSeguranca === '' ||
+      this.outrosAnimais === null ||
+      this.numeroResidentes === null ||
+      this.cep === '' ||
+      this.rua === '' ||
+      this.bairro === '' ||
+      this.cidade === '' ||
+      this.estado === ''
     ) {
       Swal.fire({
         icon: 'error',
@@ -94,31 +66,34 @@ export class FormularioComponent {
         title: 'Formulário enviado com sucesso!',
         text: 'Estamos felizes que você decidiu adotar um novo amigo, vamos analisar seu perfil e em breve entraremos em contato!',
       });
-      this.DadosAdote = {
+
+      const dadosFormulario = {
         nome: this.nome,
-        idade: this.idade,
-        endereco: this.endereco,
+        dataNascimento: this.dataNascimento,
+        genero: this.genero,
+        residencia: this.residencia,
         telefone: this.telefone,
-        email: this.email,
+        razaoAdocao: this.razaoAdocao,
+        concordaVisita: this.concordaVisita,
+        termoResponsabilidade: this.termoResponsabilidade,
+        informacoesCorretas: this.informacoesCorretas,
+        listaAdocoes: this.listaAdocoes,
         tipoResidencia: this.tipoResidencia,
-        residenciaPropria: this.residenciaPropria,
+        statusPosse: this.statusPosse,
         permissaoAnimais: this.permissaoAnimais,
         espacoDisponivel: this.espacoDisponivel,
-        telasProtecao: this.telasProtecao,
-        numeroPessoas: this.numeroPessoas,
-        concordancia: this.concordancia,
-        alergias: this.alergias,
-        jaTeveAnimais: this.jaTeveAnimais,
-        possuiOutrosAnimais: this.possuiOutrosAnimais,
-        motivoAdocao: this.motivoAdocao,
-        tempoSozinho: this.tempoSozinho,
-        visitaRepresentante: this.visitaRepresentante,
-        termoResponsabilidade: this.termoResponsabilidade,
-        declaracao: this.declaracao,
-        termosConcordancia: this.termosConcordancia
+        telasSeguranca: this.telasSeguranca,
+        outrosAnimais: this.outrosAnimais,
+        numeroResidentes: this.numeroResidentes,
+        cep: this.cep,
+        rua: this.rua,
+        bairro: this.bairro,
+        cidade: this.cidade,
+        estado: this.estado
       };
-      localStorage.setItem('FormAdotante', JSON.stringify(this.DadosAdote))
+
+      console.log(dadosFormulario);
+      localStorage.setItem('FormAdotante', JSON.stringify(dadosFormulario));
     }
   }
-
 }
