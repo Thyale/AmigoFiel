@@ -12,43 +12,43 @@
                 <form>
                     <div>
                         <label for="nome">Nome:</label>
-                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" [(ngModel)]="nome">
+                        <input type="text" name="name" id="nome" placeholder="Digite seu nome completo" [(ngModel)]="nome">
                     </div>
                     <div>
                         <label for="dataNascimento">Data de Nascimento:</label>
-                        <input type="date" name="dataNascimento" id="dataNascimento" [(ngModel)]="dataNascimento">
+                        <input type="date" name="birth_date" id="dataNascimento" [(ngModel)]="dataNascimento">
                     </div>
                     <div>
                         <label for="genero">Gênero:</label>
-                        <input type="text" name="genero" id="genero" placeholder="Informe seu gênero" [(ngModel)]="genero">
+                        <input type="text" name="gender" id="genero" placeholder="Informe seu gênero" [(ngModel)]="genero">
                     </div>
                     <div>
                         <label for="residencia">Residência:</label>
-                        <input type="text" name="residencia" id="residencia" placeholder="Digite o tipo de residência" [(ngModel)]="residencia">
+                        <input type="text" name="residency_id" id="residencia" placeholder="Digite o tipo de residência" [(ngModel)]="residencia">
                     </div>
                     <div>
                         <label for="telefone">Número de Telefone:</label>
-                        <input type="tel" name="telefone" id="telefone" placeholder="(00) 0 0000-0000" [(ngModel)]="telefone">
+                        <input type="tel" name="phone_number" id="telefone" placeholder="(00) 0 0000-0000" [(ngModel)]="telefone">
                     </div>
                     <div>
                         <label for="razaoAdocao">Razão para Adoção:</label>
-                        <input type="text" name="razaoAdocao" id="razaoAdocao" placeholder="Descreva o motivo para adoção" [(ngModel)]="razaoAdocao">
+                        <input type="text" name="reason_for_adoption" id="razaoAdocao" placeholder="Descreva o motivo para adoção" [(ngModel)]="razaoAdocao">
                     </div>
                     <div>
                         <label for="concordaVisita">Concorda com a visita da ONG?</label>
-                        <input type="text" name="concordaVisita" id="concordaVisita" placeholder="Sim/Não" [(ngModel)]="concordaVisita">
+                        <input type="text" name="agrees_with_visit" id="concordaVisita" placeholder="Sim/Não" [(ngModel)]="concordaVisita">
                     </div>
                     <div>
                         <label for="termoResponsabilidade">Concorda com os termos de responsabilidade?</label>
-                        <input type="text" name="termoResponsabilidade" id="termoResponsabilidade" placeholder="Sim/Não" [(ngModel)]="termoResponsabilidade">
+                        <input type="text" name="agrees_with_responsability_terms" id="termoResponsabilidade" placeholder="Sim/Não" [(ngModel)]="termoResponsabilidade">
                     </div>
                     <div>
                         <label for="informacoesCorretas">Declara estar passando informações corretas?</label>
-                        <input type="text" name="informacoesCorretas" id="informacoesCorretas" placeholder="Sim/Não" [(ngModel)]="informacoesCorretas">
+                        <input type="text" name="declares_truthful_information" id="informacoesCorretas" placeholder="Sim/Não" [(ngModel)]="informacoesCorretas">
                     </div>
                     <div>
                         <label for="listaAdocoes">Lista de Adoções Envolvidas:</label>
-                        <input type="text" name="listaAdocoes" id="listaAdocoes" placeholder="Descreva as adoções" [(ngModel)]="listaAdocoes">
+                        <input type="text" name="adopter" id="listaAdocoes" placeholder="Descreva as adoções" [(ngModel)]="listaAdocoes">
                     </div>
                 </form>
             </div>
@@ -58,31 +58,31 @@
                 <form>
                     <div>
                         <label for="tipoResidencia">Tipo de Residência:</label>
-                        <input type="text" name="tipoResidencia" id="tipoResidencia" placeholder="Casa, apartamento, duplex" [(ngModel)]="tipoResidencia">
+                        <input type="text" name="residence_type" id="tipoResidencia" placeholder="Casa, apartamento, duplex" [(ngModel)]="tipoResidencia">
                     </div>
                     <div>
                         <label for="statusPosse">Status de Posse:</label>
-                        <input type="text" name="statusPosse" id="statusPosse" placeholder="Própria ou alugada" [(ngModel)]="statusPosse">
+                        <input type="text" name="ownership_status" id="statusPosse" placeholder="Própria ou alugada" [(ngModel)]="statusPosse">
                     </div>
                     <div>
                         <label for="permissaoAnimais">Permissão para Animais:</label>
-                        <input type="text" name="permissaoAnimais" id="permissaoAnimais" placeholder="Sim/Não" [(ngModel)]="permissaoAnimais">
+                        <input type="text" name="has_permission_for_animals" id="permissaoAnimais" placeholder="Sim/Não" [(ngModel)]="permissaoAnimais">
                     </div>
                     <div>
                         <label for="espacoDisponivel">Espaço Disponível:</label>
-                        <input type="text" name="espacoDisponivel" id="espacoDisponivel" placeholder="Descreva o espaço disponível" [(ngModel)]="espacoDisponivel">
+                        <input type="text" name="available_space" id="espacoDisponivel" placeholder="Descreva o espaço disponível" [(ngModel)]="espacoDisponivel">
                     </div>
                     <div>
                         <label for="telasSeguranca">Telas de Segurança:</label>
-                        <input type="text" name="telasSeguranca" id="telasSeguranca" placeholder="Sim/Não" [(ngModel)]="telasSeguranca">
+                        <input type="text" name="has_safety_nets" id="telasSeguranca" placeholder="Sim/Não" [(ngModel)]="telasSeguranca">
                     </div>
                     <div>
                         <label for="outrosAnimais">Quantidade de Outros Animais:</label>
-                        <input type="number" name="outrosAnimais" id="outrosAnimais" placeholder="Número de animais" [(ngModel)]="outrosAnimais">
+                        <input type="number" name="other_pets" id="outrosAnimais" placeholder="Número de animais" [(ngModel)]="outrosAnimais">
                     </div>
                     <div>
                         <label for="numeroResidentes">Número de Residentes:</label>
-                        <input type="number" name="numeroResidentes" id="numeroResidentes" placeholder="Número de pessoas" [(ngModel)]="numeroResidentes">
+                        <input type="number" name="number_of_residents" id="numeroResidentes" placeholder="Número de pessoas" [(ngModel)]="numeroResidentes">
                     </div>
                 </form>
             </div>
@@ -92,23 +92,23 @@
                 <form>
                     <div>
                         <label for="cep">CEP:</label>
-                        <input type="text" name="cep" id="cep" placeholder="Digite o CEP" [(ngModel)]="cep">
+                        <input type="text" name="zip_code" id="cep" placeholder="Digite o CEP" [(ngModel)]="cep">
                     </div>
                     <div>
                         <label for="rua">Rua:</label>
-                        <input type="text" name="rua" id="rua" placeholder="Digite o nome da rua" [(ngModel)]="rua">
+                        <input type="text" name="street" id="rua" placeholder="Digite o nome da rua" [(ngModel)]="rua">
                     </div>
                     <div>
                         <label for="bairro">Bairro:</label>
-                        <input type="text" name="bairro" id="bairro" placeholder="Digite o nome do bairro" [(ngModel)]="bairro">
+                        <input type="text" name="neighbourhood" id="bairro" placeholder="Digite o nome do bairro" [(ngModel)]="bairro">
                     </div>
                     <div>
                         <label for="cidade">Cidade:</label>
-                        <input type="text" name="cidade" id="cidade" placeholder="Digite o nome da cidade" [(ngModel)]="cidade">
+                        <input type="text" name="city" id="cidade" placeholder="Digite o nome da cidade" [(ngModel)]="cidade">
                     </div>
                     <div>
                         <label for="estado">Estado:</label>
-                        <input type="text" name="estado" id="estado" placeholder="Digite o nome do estado" [(ngModel)]="estado">
+                        <input type="text" name="federal_unit" id="estado" placeholder="Digite o nome do estado" [(ngModel)]="estado">
                     </div>
                 </form>
             </div>
