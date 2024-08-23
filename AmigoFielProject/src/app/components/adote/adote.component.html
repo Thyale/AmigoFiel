@@ -15,9 +15,9 @@
         </div>
 
         <div class="DivGeralPets">
-            <div *ngFor="let imgPet of imgPets">
-                <img [src]="imgPet" alt="Imagem do pet disponível">
-                <p>NOME DO PET</p>
+            <div *ngFor="let imgPet of Pets">
+                <img [src]="imgPet.img" alt="Imagem do pet disponível">
+                <p>{{imgPet.nome}}</p>
                 <button (click)="AbrirDados()">SAIBA MAIS</button>
             </div>
         </div>
