@@ -19,9 +19,7 @@ Este projeto foi desenvolvido por uma equipe de 3 pessoas:
 - Gabriel Fagundes (BackEnd)
 - Thyale MD (FrontEnd)
 
-Este repositório é dedicado à parte do FrontEnd, desenvolvida por Thyale MD. Para acessar o repositório do BackEnd, desenvolvido por Douglas e Gabriel, visite: https://github.com/gabrafo/AmigoFiel_BackEnd.
-
-Também temos uma repositório unindo o FrontEnd e o BackEnd : https://github.com/gabrafo/AmigoFiel
+Este repositório é dedicado à parte do FrontEnd, desenvolvida por Thyale MD. Para acessar o repositório do BackEnd, desenvolvido por Douglas e Gabriel, visite: https://github.com/gabrafo/AmigoFiel
 
 Contribuições adicionais são bem-vindas! Para contribuir, abra uma issue ou envie um pull request.
 
